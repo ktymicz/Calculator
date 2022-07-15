@@ -122,7 +122,7 @@ namespace tokenmath
 		if (is_declared(var_name))
 		{
 			std::stringstream e;
-			e << var_name << "declared twice";
+			e << var_name << " declared twice";
 			throw std::runtime_error(e.str());
 		}
 		var_table.push_back(Variable(var_name, val));
